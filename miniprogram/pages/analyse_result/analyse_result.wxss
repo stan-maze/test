@@ -1,0 +1,120 @@
+/* pages/test/test.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigationBar {
+  position: absolute;
+  left: 0rpx;
+  top: 40rpx;
+  width: 750rpx;
+  height: 88rpx;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 32rpx;
+  font-family: Microsoft Yahei;
+  text-align: center;
+  line-height: 88rpx;
+}
+
+.background {
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 750rpx;
+  height: 450rpx;
+}
+
+.title {
+  position: absolute;
+  left: 56rpx;
+  top: 192rpx;
+  width: 640rpx;
+  height: 90rpx;
+  color: rgba(255, 255, 255, 100);
+  font-size: 64rpx;
+  text-align: left;
+  font-weight: bold;
+  font-family: PingFangSC-regular;
+}
+
+.subTitle {
+  position: absolute;
+  left: 230rpx;
+  top: 296rpx;
+  width: 290rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: rgba(255, 204, 112, 100);
+  color: rgba(16, 16, 16, 100);
+  font-size: 28rpx;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.clickBox {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  margin-top: 386rpx;
+  width: 658rpx;
+  height: 230rpx;
+  border-radius: 20rpx;
+  background-color: rgba(255, 255, 255, 100);
+  color: rgba(16, 16, 16, 100);
+  font-size: 28rpx;
+  text-align: center;
+  box-shadow: 0rpx 2rpx 30rpx 0rpx rgba(0, 0, 0, 0.1);
+  font-family: Arial;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.imgBox {
+  margin-left: 40rpx;
+  margin-top: 50rpx;
+  width: 130rpx;
+  height: 130rpx;
+  background-color: rgba(98, 212, 166, 100);
+  border-radius: 50%;
+}
+
+.img {
+  margin-top: 30rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.contentBox {
+  margin-left: 20rpx;
+  margin-top: 46rpx;
+  width: 432rpx;
+  height: 68rpx;
+  color: rgba(16, 16, 16, 100);
+  font-size: 24rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+
+.contentTitle {
+  width: 240rpx;
+  height: 56rpx;
+  color: rgba(16, 16, 16, 100);
+  font-size: 40rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+
+.contentTip {
+  margin-top: 4rpx;
+  width: 432rpx;
+  height: 68rpx;
+  color: rgba(16, 16, 16, 100);
+  font-size: 24rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}

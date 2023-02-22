@@ -1,0 +1,87 @@
+/* pages/takePhoto/takePhoto.wxss */
+page{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.navigation{
+  width: 750rpx;
+  height: 122rpx;
+  background: #000;
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+}
+
+.backBtn{
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 30rpx;
+  border-top: 4rpx solid white;
+  border-left: 4rpx solid white;
+  transform: rotate(-45deg);
+}
+
+.PicBox{
+  width: 100%;
+  height: 100%;
+}
+
+.camera{
+  width: 100%;
+  position: absolute;
+  margin:auto;
+  top: 162rpx;
+  bottom: 0;
+}
+.camera2{
+  width: 100%;
+  position: absolute;
+  margin:auto;
+  top: 162rpx;
+  bottom: 122rpx;
+  right: 0;
+  left: 0;
+}
+
+.footer{
+  width: 100%;
+  height: 122rpx;
+  display: grid;
+  grid-template-columns: 1fr 2rpx 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+}
+
+.footerItem{
+  display: flex;
+  align-items: center;
+}
+
+.footerItem image{
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+
+.footerItem text{
+  color: #fff;
+}
+
+.takeBtn{
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.8);
+  left: 50%;
+  bottom: 122rpx;
+  padding: 2px;
+  transform: translateX(-50%) translateY(50%);
+  background: #fff;
+}

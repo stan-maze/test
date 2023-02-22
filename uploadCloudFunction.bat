@@ -1,0 +1,1 @@
+"D:\微信开发者工具\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-0gv07eyqd944bbac --n quickstartFunctions --r --project "D:\myCode\微信小程序\医药管理系统" --report

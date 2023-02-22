@@ -1,0 +1,18 @@
+<!--pages/storeManage/storeManage.wxml-->
+<view class="bg">
+  <view class="searchBox">
+    <image class="searchIcon" style="width: 40rpx;height: 40rpx;" src="../../images/搜索.png"></image>
+    <input class="search" value="请输入查询药品名称或编号" type="text">
+    </input>
+  </view>
+  <view class="contentBox">
+   <p>111</p>
+   <p>111</p>
+   <p>111</p>
+   <p>111</p>
+   <p>111</p>
+   <p>111</p>
+   <p>111</p>
+   <p>111</p>
+  </view>
+</view>

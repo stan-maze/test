@@ -1,0 +1,52 @@
+<!--pages/test/test.wxml-->
+<view class="navigationBar">
+  医药管理系统
+</view>
+<view>
+  <image class="background"
+    src="../../images/bg.jpg"></image>
+</view>
+<view class="title">欢迎使用医药管理系统</view>
+<view class="subTitle">华工出品，必属精品</view>
+<view class="clickBox" style="height: auto;padding-bottom: 40rpx;" bindtap="up2">
+  <view class="nav" catchtap="hhh">
+      <view class="{{itemCss[0]}}" catchtap="changeMode">国药准字</view>
+      <view class="{{itemCss[1]}}" catchtap="changeMode">生产日期</view>
+      <view class="tracker" style="transform: translateX({{translate}});"></view>
+    </view>
+  <view style="display: flex;">
+    <view class="imgBox">
+      <image class="img" src="../../images/照相机-圆-填充.svg">
+      </image>
+    </view>
+    <view class="contentBox">
+      <view class="contentTitle">拍照药品入库</view>
+      <view class="contentTip">拍摄入库药品外壳（有国药准字），本程序将自动识别药品</view>
+    </view>
+  </view>
+</view>
+<view class="clickBox" style="margin-top: 30rpx;" bindtap="checkStore">
+  <view style="display: flex;">
+    <view class="imgBox" style="background-color: #9376F5;">
+      <image class="img" src="../../images/一级菜单.svg">
+      </image>
+    </view>
+    <view class="contentBox">
+      <view class="contentTitle">查看当前库存</view>
+      <view class="contentTip">查看当前医院所有药品存储情况，针对特定药品，生成相应预测进货数量</view>
+    </view>
+  </view>
+</view>
+
+<view class="clickBox" style="margin-top: 30rpx;" bindtap="subscribe">
+  <view style="display: flex;">
+    <view class="imgBox" style="background-color: #e774eb;">
+      <image class="img" src="../../images/提醒.png">
+      </image>
+    </view>
+    <view class="contentBox">
+      <view class="contentTitle">订阅库存告警</view>
+      <view class="contentTip">当药品库存到达设定额度时，提供微信提醒。当前剩余提醒次数: {{remindTimes}}</view>
+    </view>
+  </view>
+</view>

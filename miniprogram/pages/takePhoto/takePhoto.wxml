@@ -1,0 +1,23 @@
+<!--pages/takePhoto/takePhoto.wxml-->
+<view class="navigation">
+  <view class="backBtn" bindtap="goBack"></view>
+</view>
+<view class="camera2">
+<image mode="widthFix" wx:if="{{hasTakePhoto}}" class="PicBox" src="{{src}}"></image>
+</view>
+<camera wx:if="{{!hasTakePhoto}}" class="camera" device-position="back" flash="off" binderror="error"></camera>
+
+<view wx:if="{{!hasTakePhoto}}" class="takeBtn" bindtap="takePhoto"></view>
+<view wx:if="{{hasTakePhoto}}" class="footer">
+  <view class="footerItem">
+    <image src="cloud://medicine-8g3hd75s42f282d0.6d65-medicine-8g3hd75s42f282d0-1308569011/照相机-圆-填充.svg"
+      bindtap="retake"></image>
+    <text bindtap="retake">重新拍照</text>
+  </view>
+  <view style="width:0;height:46rpx;border: 2rpx solid white;background-color: #fff;"></view>
+  <view class="footerItem">
+    <image src="cloud://medicine-8g3hd75s42f282d0.6d65-medicine-8g3hd75s42f282d0-1308569011/上传.png" bindtap="upload">
+    </image>
+    <text bindtap="upload">确认上传</text>
+  </view>
+</view>

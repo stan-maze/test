@@ -1,0 +1,13 @@
+<view class="navigationBar">
+  医药管理系统
+</view>
+<view>
+  <image class="background"
+    src="cloud://medicine-8g3hd75s42f282d0.6d65-medicine-8g3hd75s42f282d0-1308569011/background.jfif"></image>
+</view>
+<view class="title">欢迎使用医药管理系统</view>
+<view class="subTitle">华工出品，必属精品</view>
+<view class="clickBox" bindtap="up2">
+  <view>识别结果</view>
+  <view>{{result}}</view>
+</view>
